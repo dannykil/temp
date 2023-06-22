@@ -25,7 +25,8 @@ pipeline {
 
                 git url: 'https://github.com/dannykil/temp.git',
                     branch: 'master',
-                    credentialsId: 'jenkinsgit'
+                    //credentialsId: 'jenkinsgit'
+                    credentialsId: 'git_test'
             }
 
             post {
