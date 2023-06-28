@@ -119,9 +119,9 @@ pipeline {
           agent any
           steps {
             echo 'Build Backend'
-
+            echo "The PROD is going to be ${PROD}"
+            
             dir ('./server'){
-                echo "The PROD is goint to be ${PROD}"
                 sh """
                 docker build . -t server --build-arg env=${PROD}
                 """
