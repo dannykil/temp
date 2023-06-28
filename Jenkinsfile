@@ -119,7 +119,7 @@ pipeline {
           agent any
           steps {
             echo 'Build Backend'
-            echo "The PROD is going to be ${PROD}"
+            echo "The PROD is going to be PROD"
             
             dir ('./server'){
                 sh """
