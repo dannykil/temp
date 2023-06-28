@@ -69,7 +69,6 @@ pipeline {
                         body: "Successfully deployed frontend!"
 
               }
-
               failure {
                   echo 'I failed :('
 
@@ -122,9 +121,9 @@ pipeline {
             echo 'Build Backend'
 
             dir ('./server'){
-                sh """
+                sh '''
                 docker build . -t server --build-arg env=${PROD}
-                """
+                '''
             }
           }
 
