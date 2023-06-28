@@ -118,7 +118,7 @@ pipeline {
         stage('Bulid Backend') {
           agent any
           steps {
-            echo 'Build Backend'
+            // echo 'Build Backend'
             echo "The PROD is going to be PROD"
             
             dir ('./server'){
